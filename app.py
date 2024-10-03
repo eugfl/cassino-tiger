@@ -75,6 +75,11 @@ class slotMachine:
         self._display(amount_bet, result)
         self._update_balance(amount_bet, result, player)
 
-machine1 = slotMachine(level=1)
-player1 = Player()
+# Cria uma máquina caça-níquel com nível de dificuldade 4. O quão mais próximo de 0, mais dificil do jogador ganhar!)
+machine1 = slotMachine(level=4)
+
+# Cria um jogador com saldo inicial de 100
+player1 = Player(balance=100)
+
+# O jogador aposta 10 e joga
 machine1.play(10, player1)
